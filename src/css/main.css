@@ -12,7 +12,7 @@ html
 {
     background: radial-gradient(circle, rgba(250,221,225,1) 14%, rgba(255,166,193,1) 96%);
     text-shadow: 3px 2px 2px rgba(150, 150, 150, 0.81);
-    padding: 0.5rem;
+    padding: 2%;
     font-family: 'Lobster', cursive;
     color: white;
     font-size: 3rem;
@@ -51,15 +51,30 @@ html
     color: #e78caf;
 }
 @media only screen and (max-width: 900px){
+    .main__header{
+        text-align: center;
+        font-size:2rem;
+    }
+    #logobanner{
+        overflow: hidden;
+        vertical-align: middle;
+        width: 6.8rem;  /*image size with 4px of left padding*/
+        height: 6.8rem;
+        position: sticky;
+        margin: 0;
+        padding-left: 0.4rem; /*padding*/
+    }
     .main__header_nav{
         display: flex;
         flex-direction: column;
         width: 100%;
         text-align: center;}
-    
     #header_nav_box1, #header_nav_box3{
         background-color:rgba(250, 221, 225, 0.26);
         border-radius: 0.5rem;
+    }
+    #spacebar{
+        overflow: hidden;
     }
    
 }
